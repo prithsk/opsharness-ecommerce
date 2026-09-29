@@ -1,0 +1,20 @@
+{
+  "notes": "Swap the sim server for real ones: your store platform, a shipping-label or carrier service, and the support inbox.",
+  "servers": {
+    "sim": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "opsharness.mcp_serve",
+        "--env",
+        "ecommerce",
+        "--seed",
+        "0"
+      ]
+    }
+  },
+  "approve": {
+    "always": [],
+    "never": []
+  }
+}
